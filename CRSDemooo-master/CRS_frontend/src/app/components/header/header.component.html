@@ -25,41 +25,25 @@
         <label >
             <a routerLink="/main" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="logo">ABC Telecom Ltd</a>
         </label>
-        <ul class="menu">
-            <li class="menu-items">
+        <ul >
+            <li>
                 <a routerLink="/main" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items"> Home</a>
             </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" id="dropdownMenuLink" role="button"  aria-expanded="false">Admin</a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li  > <a href="/regadmin" >Registration</a></li>
-                   <li ><a href="/logadmin">Login</a></li>
-                  </ul>
+           
+            <li>
+                <a routerLink="/logadmin" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items"> Admin</a>
             </li>
-    
-    <li class="dropdown">
-            <a class="dropdown-toggle" id="dropdownMenuLink" role="button"  aria-expanded="false">
-            Customer</a>
-       
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <li  > <a href="/regcustomer" >Registration</a></li>
-         <li ><a href="/customers">Login</a></li>
-        </ul>
-    </li>
-    <li class="dropdown">
-        <a class="dropdown-toggle" id="dropdownMenuLink" role="button"  aria-expanded="false">Manager</a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li  > <a href="/regmanager" >Registration</a></li>
-           <li ><a href="/managers">Login</a></li>
-          </ul>    
-    </li>
-    <li class="dropdown">
-        <a class="dropdown-toggle" id="dropdownMenuLink" role="button"  aria-expanded="false">Engineer</a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li  > <a href="/regengineer" >Registration</a></li>
-           <li ><a href="/engineers">Login</a></li>
-          </ul>
-    </li>   
+            <li>
+                <a routerLink="/customers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items"> Customer</a>
+            </li>
+            <li>
+                <a routerLink="/managers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items"> Manager</a>
+            </li>
+            <li>
+                <a routerLink="/engineers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items"> Engineer</a>
+            </li>
+   
+
     </ul>
 
 </nav>

@@ -13,6 +13,7 @@ import { FeedbacksComponent } from './components/feedbacks/feedbacks.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { MainComponent } from './components/main/main.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { RegcustomerComponent } from './components/regcustomer/regcustomer.component';
 import {RegmanagerComponent} from './components/regmanager/regmanager.component'
 import{RegengineerComponent} from './components/regengineer/regengineer.component';
@@ -62,6 +63,10 @@ const routers: Routes = [
     path: 'logadmin',
     component:LogadminComponent,
   },
+  {
+    path: 'footer',
+    component:FooterComponent,
+  },
 ];
 
 @NgModule({
@@ -75,6 +80,7 @@ const routers: Routes = [
     AdminComponent,
     MainComponent,
     HeaderComponent,
+    FooterComponent,
     RegcustomerComponent,
     RegmanagerComponent,
     RegengineerComponent,

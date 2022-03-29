@@ -26,6 +26,10 @@
                    <div class="table">
                         <form (ngSubmit)="registerEngineer()">
                             <div class="form-group">
+                                <input type="text" class="form-control" name="engineerName"
+                                    [(ngModel)]="engineer.engineerName" placeholder="Enter name">
+                            </div>
+                            <div class="form-group">
                                 <input type="text" class="form-control" name="engineerEmail"
                                     [(ngModel)]="engineer.engineerEmail" placeholder="Enter email">
                             </div>
@@ -34,11 +38,10 @@
                                 <input type="password" class="form-control" name="engineerPassword"
                                     [(ngModel)]="engineer.engineerPassword" placeholder="Enter password">
                             </div>
-
                             <div class="form-group">
-                                <input type="text" class="form-control" name="engineerName"
-                                    [(ngModel)]="engineer.engineerName" placeholder="Enter name">
-                            </div>
+                                <a href="/engineers">Already Have An Account ?</a>
+                             </div>
+                            
 
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>

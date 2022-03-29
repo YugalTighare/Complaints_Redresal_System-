@@ -1,0 +1,17 @@
+.footer {
+  background-color: black;
+
+  margin: 0;
+  bottom: 0;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+}
+/*
+margin: 0;
+bottom: 0;
+padding: 20px;
+position: absolute;
+width: 100%;*/

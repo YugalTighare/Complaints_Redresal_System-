@@ -26,6 +26,14 @@
                     <div class="table">
                         <form (ngSubmit)="registerManager()">
                             <div class="form-group">
+                                <input type="text" class="form-control" name="managerName"
+                                    [(ngModel)]="manager.managerName" placeholder="Enter name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="managerPincode"
+                                    [(ngModel)]="manager.managerPincode" placeholder="Enter pincode">
+                            </div>
+                            <div class="form-group">
                                 <input type="text" class="form-control" name="managerEmail"
                                     [(ngModel)]="manager.managerEmail" placeholder="Enter email">
                             </div>
@@ -34,18 +42,10 @@
                                 <input type="password" class="form-control" name="managerPassword"
                                     [(ngModel)]="manager.managerPassword" placeholder="Enter password">
                             </div>
-
                             <div class="form-group">
-                                <input type="text" class="form-control" name="managerName"
-                                    [(ngModel)]="manager.managerName" placeholder="Enter name">
-                            </div>
-
-
-
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="managerPincode"
-                                    [(ngModel)]="manager.managerPincode" placeholder="Enter pincode">
-                            </div>
+                                <a href="/managers">Already Have An Account ?</a>
+                             </div>
+                            
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
